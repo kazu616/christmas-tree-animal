@@ -26,21 +26,5 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("The countdown has ended!");
     });
 });
-anime({
-  targets: '#image1',
-  translateY: [anime.stagger(10), 0],
-  opacity: [0, 1],
-  easing: 'easeInOutQuad',
-  duration: 1000,
-  delay: anime.stagger(100),
-});
 
-// Set up flip down animation for image 2
-anime({
-  targets: '#image2',
-  translateY: [anime.stagger(10), 0],
-  opacity: [0, 1],
-  easing: 'easeInOutQuad',
-  duration: 1000,
-  delay: anime.stagger(100),
-});
+

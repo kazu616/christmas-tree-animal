@@ -17,10 +17,13 @@
       rel="stylesheet"
     />
     <audio autoplay src="./1.mp3"></audio>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   </head>
   <body >
-    
+    <div id="audioPlayerContainer">
+      <audio id="audioPlayer" controls style="display: none;"></audio>
+    </div>
     <div class="santa-container">
       <svg
         data-name="Layer 1"
@@ -237,9 +240,17 @@
     </div>
     <div id="flipdown" class="flipdown"></div>
     <div class="deer-container">
-      <div id="animal">
+      <div class="animal" onclick="playSound('popi1');">
         <img id="image1" src="./popi1.png" alt="Image 1">
+      </div>
+      <div class="animal" onclick="playSound('dodo');">
         <img id="image2" src="./dodo.png" alt="Image 2">
+      </div>
+      <div class="animal" onclick="playSound('rum');">
+        <img id="image3" src="./rum.png" alt="Image 3">
+      </div>
+      <div class="animal" onclick="playSound('jery');">
+        <img id="image4" src="./jery.png" alt="Image 4">
       </div>
       <div class="artboard">
         <div class="deer">
@@ -340,7 +351,26 @@
       </div>
       
     </div>
+    <script>
+      var audioPlayer = document.getElementById("audioPlayer");
+      var currentAudio = null;
 
+      function playSound(audioName) {
+        console.log(audioPlayer);
+
+        if (currentAudio === audioName) {
+          if (audioPlayer.paused) {
+            audioPlayer.play();
+          } else {
+            audioPlayer.pause();
+          }
+        } else {
+          audioPlayer.src = "./" + audioName + ".mp3";
+          audioPlayer.play();
+          currentAudio = audioName;
+        }
+      }
+    </script>
   </body>
   
 </html>
