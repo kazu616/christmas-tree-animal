@@ -18,6 +18,13 @@ body {
     #6f0808
   );
 }
+#myAudio {
+  height: 1px;
+  width: 1px;
+  background-color: transparent;
+  border: none; /* Optional: Remove any default border */
+}
+
 .animal{
   display: flex;
   position: absolute;

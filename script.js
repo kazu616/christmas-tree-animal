@@ -6,10 +6,6 @@ const nextXmasDate = (currentTime) => {
   }
   return xmasDate;
 };
-document.addEventListener('click', function () {
-  var audio = document.getElementById('myAudio');
-  audio.play();
-});
 
 document.addEventListener("DOMContentLoaded", () => {
   // Unix timestamp (in seconds) to count down to
