@@ -19,10 +19,8 @@ body {
   );
 }
 #myAudio {
-  height: 1px;
-  width: 1px;
   background-color: transparent;
-  border: none; /* Optional: Remove any default border */
+  display: none; /* Optional: Remove any default border */
 }
 
 .animal{
