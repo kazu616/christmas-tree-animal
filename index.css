@@ -34,18 +34,19 @@ body {
 }
 
 #image2 {
-  margin: 60px 100px 100px 380px;
+  transform: translate(400px, 50px);
   width: 200px; /* Đặt chiều rộng mong muốn */
   height: 200px; /* Đặt chiều cao mong muốn */
 }
 #image3 {
-  margin: 70px -190px;
+  transform: translate(-190px, 60px);
   width: 200px; /* Đặt chiều rộng mong muốn */
   height: 200px; /* Đặt chiều cao mong muốn */
 }
 
 #image4 {
-  margin: -180px 100px 100px 500px;
+  position: relative;
+  transform: translate(500px, -150px);
   width: 200px; /* Đặt chiều rộng mong muốn */
   height: 200px; /* Đặt chiều cao mong muốn */
 }

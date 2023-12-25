@@ -187,7 +187,7 @@
         }
       </script>
     </ul>
-    <h1>Bé Nhím Giáng Sinh Vui Vẻ!</h1>
+    <h1  onclick="playSoundV1();">Bé Nhím Giáng Sinh Vui Vẻ!</h1>
     <div class="tree-container">
       <div class="tree">
         <div class="star"></div>
@@ -352,12 +352,12 @@
     </div>
     <script>
       var audioBackground = document.getElementById("myAudio");
-      if(audioBackground != null){
-        audioBackground.play();
+      function playSoundV1() {
+          audioBackground.play();        
       }
-      var audioPlayer = document.getElementById("audioPlayer");
-      var currentAudio = null;
 
+      var currentAudio = null;
+      var audioPlayer = document.getElementById("audioPlayer");
       function playSound(audioName) {
         console.log(audioPlayer);
 
